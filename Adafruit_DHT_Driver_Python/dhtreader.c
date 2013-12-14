@@ -183,13 +183,13 @@ static struct PyModuleDef moduledef = {
 #define INITERROR return NULL
 
 PyObject *
-PyInit_myextension(void)
+PyInit_dhtreader(void)
 
 #else
 #define INITERROR return
 
 void
-initmyextension(void)
+initdhtreader((void)
 #endif
 {
 #if PY_MAJOR_VERSION >= 3
